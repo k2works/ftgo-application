@@ -1,7 +1,6 @@
 package net.chrisrichardson.ftgo.orderservice.domain;
 
 import io.eventuate.tram.events.aggregates.ResultWithDomainEvents;
-import net.chrisrichardson.ftgo.common.Address;
 import net.chrisrichardson.ftgo.common.Money;
 import net.chrisrichardson.ftgo.common.UnsupportedStateTransitionException;
 import net.chrisrichardson.ftgo.orderservice.api.events.*;
