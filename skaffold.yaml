@@ -9,12 +9,12 @@ build:
 deploy:
   kubectl:
     manifests:
-    - deployment/kubernetes/cdc-services/eventuate-local-cdc-service.yml
-    - deployment/kubernetes/cdc-services/ftgo-tram-cdc-service.yml
-    - deployment/kubernetes/stateful-services/ftgo-db-secret.yml
-    - deployment/kubernetes/stateful-services/ftgo-dynamodb-local.yml
-    - deployment/kubernetes/stateful-services/ftgo-kafka-config.yml
-    - deployment/kubernetes/stateful-services/ftgo-kafka-deployment.yml
-    - deployment/kubernetes/stateful-services/ftgo-mysql-deployment.yml
-    - deployment/kubernetes/stateful-services/ftgo-zookeeper-deployment.yml
-    - ftgo-consumer-service/src/deployment/kubernetes/ftgo-consumer-service.yml
+    - ops/deployment/kubernetes/cdc-services/eventuate-local-cdc-service.yml
+    - ops/deployment/kubernetes/cdc-services/ftgo-tram-cdc-service.yml
+    - ops/deployment/kubernetes/stateful-services/ftgo-db-secret.yml
+    - ops/deployment/kubernetes/stateful-services/ftgo-dynamodb-local.yml
+    - ops/deployment/kubernetes/stateful-services/ftgo-kafka-config.yml
+    - ops/deployment/kubernetes/stateful-services/ftgo-kafka-deployment.yml
+    - ops/deployment/kubernetes/stateful-services/ftgo-mysql-deployment.yml
+    - ops/deployment/kubernetes/stateful-services/ftgo-zookeeper-deployment.yml
+    - ops/ftgo-consumer-service/src/deployment/kubernetes/ftgo-consumer-service.yml
