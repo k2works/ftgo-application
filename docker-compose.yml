@@ -24,7 +24,7 @@ services:
       KAFKA_HEAP_OPTS: -Xmx192m
   mysql:
     build:
-      context: ./mysql
+      context: ./ops/docker/mysql
       args:
         EVENTUATE_COMMON_VERSION: ${EVENTUATE_COMMON_VERSION?}
         EVENTUATE_SAGA_VERSION: ${EVENTUATE_SAGA_VERSION?}
@@ -91,7 +91,7 @@ services:
       EVENTUATE_CDC_READER_READER1_OUTBOXID: 1
 
   ftgo-consumer-service:
-    build: 
+    build:
       context: ./ftgo-consumer-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
@@ -110,7 +110,7 @@ services:
       EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING: zookeeper:2181
       EVENTUATE_DATABASE_SCHEMA: ftgo_consumer_service
   ftgo-order-service:
-    build: 
+    build:
       context: ./ftgo-order-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
@@ -133,7 +133,7 @@ services:
       SPRING_ZIPKIN_BASE_URL: http://zipkin:9411/
       EVENTUATE_DATABASE_SCHEMA: ftgo_order_service
   ftgo-kitchen-service:
-      build: 
+      build:
         context: ./ftgo-kitchen-service
         args:
             baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
@@ -153,7 +153,7 @@ services:
         EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING: zookeeper:2181
         EVENTUATE_DATABASE_SCHEMA: ftgo_kitchen_service
   ftgo-restaurant-service:
-      build: 
+      build:
         context: ./ftgo-restaurant-service
         args:
             baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
@@ -173,7 +173,7 @@ services:
         EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING: zookeeper:2181
         EVENTUATE_DATABASE_SCHEMA: ftgo_restaurant_service
   ftgo-accounting-service:
-        build: 
+        build:
           context: ./ftgo-accounting-service
           args:
               baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
@@ -193,7 +193,7 @@ services:
           EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING: zookeeper:2181
           EVENTUATE_DATABASE_SCHEMA: ftgo_accounting_service
   ftgo-delivery-service:
-    build: 
+    build:
       context: ./ftgo-delivery-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
@@ -216,7 +216,7 @@ services:
       SPRING_ZIPKIN_BASE_URL: http://zipkin:9411/
       EVENTUATE_DATABASE_SCHEMA: ftgo_delivery_service
   ftgo-order-history-service:
-    build: 
+    build:
       context: ./ftgo-order-history-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
@@ -236,7 +236,7 @@ services:
       AWS_DYNAMODB_ENDPOINT_URL: http://dynamodblocal:8000
       AWS_REGION: ${AWS_REGION:-us-west-2}
   ftgo-api-gateway:
-    build: 
+    build:
       context: ./ftgo-api-gateway
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}

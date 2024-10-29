@@ -82,17 +82,17 @@ dockerCompose {
   mysql {
       projectName = null
       startedServices = ["mysql"]
-  }    
-  
+  }
+
   infrastructure {
       projectName = null
       startedServices = ["mysql", "cdc-service", "dynamodblocal-init", "kafka", "zookeeper"]
-  }    
-  
+  }
+
   kafkaGui {
       projectName = null
       startedServices = ["kafka-gui"]
-  }  
+  }
 }
 
 composeUp.dependsOn(infrastructureComposeUp)
