@@ -1,0 +1,37 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx gulp",
+    "test": "npm-run-all build slides",
+    "build": "npx gulp build",
+    "slides": "npx gulp slides",
+    "docs": "npx gulp docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@marp-team/marp-cli": "^3.4.0",
+    "asciidoctor": "^3.0.4",
+    "asciidoctor-kroki": "^0.18.1",
+    "babel-loader": "^9.2.1",
+    "browser-sync": "^3.0.3",
+    "cpx": "^1.5.0",
+    "css-loader": "^7.1.2",
+    "fs": "^0.0.1-security",
+    "gulp": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^6.0.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "@k2works/full-stack-lab": "^1.8.0"
+  }
+}
