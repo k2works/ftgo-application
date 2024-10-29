@@ -1,6 +1,7 @@
 package net.chrisrichardson.ftgo.orderservice.grpc;
 
 import net.chrisrichardson.ftgo.orderservice.domain.OrderService;
+import net.chrisrichardson.ftgo.orderservice.infrastructure.grpc.GrpcConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

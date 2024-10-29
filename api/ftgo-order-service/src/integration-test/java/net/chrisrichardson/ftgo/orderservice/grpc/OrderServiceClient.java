@@ -8,9 +8,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
-import java.util.stream.IntStream;
 
-import net.chrisrichardson.ftgo.orderservice.web.MenuItemIdAndQuantity;
+import net.chrisrichardson.ftgo.orderservice.presentation.MenuItemIdAndQuantity;
 
 public class OrderServiceClient {
   private static final Logger logger = Logger.getLogger(OrderServiceClient.class.getName());

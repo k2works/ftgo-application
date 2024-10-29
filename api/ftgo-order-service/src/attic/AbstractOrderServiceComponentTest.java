@@ -14,7 +14,7 @@ import net.chrisrichardson.ftgo.orderservice.domain.RestaurantRepository;
 import net.chrisrichardson.ftgo.orderservice.messaging.OrderServiceMessagingConfiguration;
 import net.chrisrichardson.ftgo.orderservice.sagaparticipants.ApproveOrderCommand;
 import net.chrisrichardson.ftgo.orderservice.service.OrderCommandHandlersConfiguration;
-import net.chrisrichardson.ftgo.orderservice.web.OrderWebConfiguration;
+import net.chrisrichardson.ftgo.orderservice.presentation.OrderWebConfiguration;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

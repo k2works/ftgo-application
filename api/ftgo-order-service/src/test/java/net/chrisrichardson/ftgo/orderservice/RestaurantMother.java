@@ -4,7 +4,7 @@ import net.chrisrichardson.ftgo.common.Address;
 import net.chrisrichardson.ftgo.common.Money;
 import net.chrisrichardson.ftgo.orderservice.domain.MenuItem;
 import net.chrisrichardson.ftgo.orderservice.domain.Restaurant;
-import net.chrisrichardson.ftgo.orderservice.messaging.RestaurantEventMapper;
+import net.chrisrichardson.ftgo.orderservice.infrastructure.messaging.RestaurantEventMapper;
 import net.chrisrichardson.ftgo.restaurantservice.events.Menu;
 import net.chrisrichardson.ftgo.restaurantservice.events.RestaurantCreated;
 

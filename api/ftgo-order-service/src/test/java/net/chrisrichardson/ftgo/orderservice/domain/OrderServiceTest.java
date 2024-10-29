@@ -5,10 +5,10 @@ import io.eventuate.tram.sagas.orchestration.SagaInstanceFactory;
 import net.chrisrichardson.ftgo.orderservice.OrderDetailsMother;
 import net.chrisrichardson.ftgo.orderservice.RestaurantMother;
 import net.chrisrichardson.ftgo.orderservice.api.events.OrderCreatedEvent;
-import net.chrisrichardson.ftgo.orderservice.sagas.cancelorder.CancelOrderSaga;
-import net.chrisrichardson.ftgo.orderservice.sagas.createorder.CreateOrderSaga;
-import net.chrisrichardson.ftgo.orderservice.sagas.createorder.CreateOrderSagaState;
-import net.chrisrichardson.ftgo.orderservice.sagas.reviseorder.ReviseOrderSaga;
+import net.chrisrichardson.ftgo.orderservice.application.sagas.cancelorder.CancelOrderSaga;
+import net.chrisrichardson.ftgo.orderservice.application.sagas.createorder.CreateOrderSaga;
+import net.chrisrichardson.ftgo.orderservice.application.sagas.createorder.CreateOrderSagaState;
+import net.chrisrichardson.ftgo.orderservice.application.sagas.reviseorder.ReviseOrderSaga;
 import org.junit.Before;
 import org.junit.Test;
 
