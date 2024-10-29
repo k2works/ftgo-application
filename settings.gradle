@@ -1,42 +1,70 @@
 
-include "common-swagger"
-include "ftgo-test-util"
-include "ftgo-test-util-json-schema"
-include "ftgo-common"
-include "ftgo-common-jpa"
+include 'api:common-swagger'
+project(':api:common-swagger').projectDir = new File('api/common-swagger')
+include 'api:ftgo-test-util'
+project(':api:ftgo-test-util').projectDir = new File('api/ftgo-test-util')
+include 'api:ftgo-test-util-json-schema'
+project(':api:ftgo-test-util-json-schema').projectDir = new File('api/ftgo-test-util-json-schema')
+include 'api:ftgo-common'
+project(':api:ftgo-common').projectDir = new File('api/ftgo-common')
+include 'api:ftgo-common-jpa'
+project(':api:ftgo-common-jpa').projectDir = new File('api/ftgo-common-jpa')
+
+include 'api:ftgo-order-service'
+project(':api:ftgo-order-service').projectDir = new File('api/ftgo-order-service')
+
+include 'api:ftgo-order-service-api'
+project(':api:ftgo-order-service-api').projectDir = new File('api/ftgo-order-service-api')
+include 'api:ftgo-order-service-contracts'
+project(':api:ftgo-order-service-contracts').projectDir = new File('api/ftgo-order-service-contracts')
+
+include 'api:ftgo-kitchen-service-api'
+project(':api:ftgo-kitchen-service-api').projectDir = new File('api/ftgo-kitchen-service-api')
+include 'api:ftgo-kitchen-service'
+project(':api:ftgo-kitchen-service').projectDir = new File('api/ftgo-kitchen-service')
+include 'api:ftgo-kitchen-service-contracts'
+project(':api:ftgo-kitchen-service-contracts').projectDir = new File('api/ftgo-kitchen-service-contracts')
+
+include 'api:ftgo-accounting-service-api'
+project(':api:ftgo-accounting-service-api').projectDir = new File('api/ftgo-accounting-service-api')
+include 'api:ftgo-accounting-service-api-spec'
+project(':api:ftgo-accounting-service-api-spec').projectDir = new File('api/ftgo-accounting-service-api-spec')
+include 'api:ftgo-accounting-service'
+project(':api:ftgo-accounting-service').projectDir = new File('api/ftgo-accounting-service')
+include 'api:ftgo-accounting-service-contracts'
+project(':api:ftgo-accounting-service-contracts').projectDir = new File('api/ftgo-accounting-service-contracts')
+
+include 'api:ftgo-consumer-service-api'
+project(':api:ftgo-consumer-service-api').projectDir = new File('api/ftgo-consumer-service-api')
+include 'api:ftgo-consumer-service-api-spec'
+project(':api:ftgo-consumer-service-api-spec').projectDir = new File('api/ftgo-consumer-service-api-spec')
+include 'api:ftgo-consumer-service'
+project(':api:ftgo-consumer-service').projectDir = new File('api/ftgo-consumer-service')
+include 'api:ftgo-consumer-service-contracts'
+project(':api:ftgo-consumer-service-contracts').projectDir = new File('api/ftgo-consumer-service-contracts')
+
+include 'api:ftgo-restaurant-service-api'
+project(':api:ftgo-restaurant-service-api').projectDir = new File('api/ftgo-restaurant-service-api')
+include 'api:ftgo-restaurant-service-api-spec'
+project(':api:ftgo-restaurant-service-api-spec').projectDir = new File('api/ftgo-restaurant-service-api-spec')
+include 'api:ftgo-restaurant-service-contracts'
+project(':api:ftgo-restaurant-service-contracts').projectDir = new File('api/ftgo-restaurant-service-contracts')
+include 'api:ftgo-restaurant-service'
+project(':api:ftgo-restaurant-service').projectDir = new File('api/ftgo-restaurant-service')
+
+include 'api:ftgo-order-history-service'
+project(':api:ftgo-order-history-service').projectDir = new File('api/ftgo-order-history-service')
+
+include 'api:ftgo-delivery-service'
+project(':api:ftgo-delivery-service').projectDir = new File('api/ftgo-delivery-service')
+include 'api:ftgo-delivery-service-api'
+project(':api:ftgo-delivery-service-api').projectDir = new File('api/ftgo-delivery-service-api')
 
 
-include "ftgo-order-service"
+include 'api:ftgo-api-gateway'
+project(':api:ftgo-api-gateway').projectDir = new File('api/ftgo-api-gateway')
+include 'api:ftgo-end-to-end-tests'
+project(':api:ftgo-end-to-end-tests').projectDir = new File('api/ftgo-end-to-end-tests')
 
-include "ftgo-order-service-api"
-include "ftgo-order-service-contracts"
-
-include "ftgo-kitchen-service-api"
-include "ftgo-kitchen-service"
-include "ftgo-kitchen-service-contracts"
-
-include "ftgo-accounting-service-api"
-include "ftgo-accounting-service-api-spec"
-include "ftgo-accounting-service"
-include "ftgo-accounting-service-contracts"
-
-include "ftgo-consumer-service-api"
-include "ftgo-consumer-service-api-spec"
-include "ftgo-consumer-service"
-include "ftgo-consumer-service-contracts"
-
-include "ftgo-restaurant-service-api"
-include "ftgo-restaurant-service-api-spec"
-include "ftgo-restaurant-service-contracts"
-include "ftgo-restaurant-service"
-
-include "ftgo-order-history-service"
-
-include "ftgo-delivery-service"
-include "ftgo-delivery-service-api"
-
-
-include "ftgo-api-gateway"
-include "ftgo-end-to-end-tests"
-
-include "ftgo-restaurant-service-aws-lambda"
+include 'api:ftgo-restaurant-service-aws-lambda'
+project(':api:ftgo-restaurant-service-aws-lambda').projectDir = new File('api/ftgo-restaurant-service-aws-lambda')

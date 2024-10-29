@@ -92,7 +92,7 @@ services:
 
   ftgo-consumer-service:
     build:
-      context: ./ftgo-consumer-service
+      context: ./api/ftgo-consumer-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
     ports:
@@ -111,7 +111,7 @@ services:
       EVENTUATE_DATABASE_SCHEMA: ftgo_consumer_service
   ftgo-order-service:
     build:
-      context: ./ftgo-order-service
+      context: ./api/ftgo-order-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
     ports:
@@ -134,7 +134,7 @@ services:
       EVENTUATE_DATABASE_SCHEMA: ftgo_order_service
   ftgo-kitchen-service:
       build:
-        context: ./ftgo-kitchen-service
+        context: ./api/ftgo-kitchen-service
         args:
             baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
       ports:
@@ -154,7 +154,7 @@ services:
         EVENTUATE_DATABASE_SCHEMA: ftgo_kitchen_service
   ftgo-restaurant-service:
       build:
-        context: ./ftgo-restaurant-service
+        context: ./api/ftgo-restaurant-service
         args:
             baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
       ports:
@@ -174,7 +174,7 @@ services:
         EVENTUATE_DATABASE_SCHEMA: ftgo_restaurant_service
   ftgo-accounting-service:
         build:
-          context: ./ftgo-accounting-service
+          context: ./api/ftgo-accounting-service
           args:
               baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
         ports:
@@ -194,7 +194,7 @@ services:
           EVENTUATE_DATABASE_SCHEMA: ftgo_accounting_service
   ftgo-delivery-service:
     build:
-      context: ./ftgo-delivery-service
+      context: ./api/ftgo-delivery-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
     ports:
@@ -217,7 +217,7 @@ services:
       EVENTUATE_DATABASE_SCHEMA: ftgo_delivery_service
   ftgo-order-history-service:
     build:
-      context: ./ftgo-order-history-service
+      context: ./api/ftgo-order-history-service
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
     ports:
@@ -237,7 +237,7 @@ services:
       AWS_REGION: ${AWS_REGION:-us-west-2}
   ftgo-api-gateway:
     build:
-      context: ./ftgo-api-gateway
+      context: ./api/ftgo-api-gateway
       args:
           baseImageVersion: ${EVENTUATE_JAVA_BASE_IMAGE_VERSION}
     ports:
@@ -258,14 +258,14 @@ services:
         JAVA_OPTS: -Xmx128m
 
   dynamodblocal:
-    build: ./dynamodblocal
+    build: ./ops/docker/dynamodblocal
     ports:
      - "8000:8000"
     environment:
       JAVA_OPTS: -Xmx128m
 
   dynamodblocal-init:
-    build: ./dynamodblocal-init
+    build: ./ops/docker/dynamodblocal-init
     depends_on:
       - dynamodblocal
     restart: on-failure

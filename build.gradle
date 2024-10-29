@@ -57,7 +57,9 @@ subprojects {
 }
 
 task buildContracts(type: GradleBuild) {
-  tasks = subprojects.collect { it.name }.findAll { it.endsWith("-contracts") }.collect { ":" + it + ":publish"}
+    tasks = subprojects.collect { it.name }
+            .findAll { it.endsWith("-contracts") }
+            .collect { ":api:" + it + ":publish" }
 }
 
 task compileAll(type: GradleBuild) {
@@ -99,7 +101,7 @@ composeUp.dependsOn(infrastructureComposeUp)
 
 subprojects.each {
   if (it.name.endsWith("-service") || it.name.endsWith("-gateway")) {
-    composeBuild.dependsOn(":" + it.name + ":assemble")
-    composeUp.dependsOn(":" + it.name + ":assemble")
+    composeBuild.dependsOn(":api:" + it.name + ":assemble")
+    composeUp.dependsOn("api:" + it.name + ":assemble")
   }
  }
