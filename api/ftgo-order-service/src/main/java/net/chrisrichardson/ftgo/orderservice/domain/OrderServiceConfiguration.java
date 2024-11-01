@@ -13,6 +13,7 @@ import net.chrisrichardson.ftgo.orderservice.infrastructure.sagaparticipants.Ord
 import net.chrisrichardson.ftgo.orderservice.sagas.cancelorder.CancelOrderSaga;
 import net.chrisrichardson.ftgo.orderservice.sagas.createorder.CreateOrderSaga;
 import net.chrisrichardson.ftgo.orderservice.sagas.reviseorder.ReviseOrderSaga;
+import net.chrisrichardson.ftgo.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;
 import org.springframework.context.annotation.Bean;

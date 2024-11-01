@@ -2,7 +2,6 @@ package net.chrisrichardson.ftgo.orderservice.service;
 
 import io.eventuate.tram.commands.consumer.CommandHandlerReplyBuilder;
 import net.chrisrichardson.ftgo.orderservice.domain.OrderRevision;
-import net.chrisrichardson.ftgo.orderservice.domain.OrderService;
 import io.eventuate.tram.commands.consumer.CommandHandlers;
 import io.eventuate.tram.commands.consumer.CommandMessage;
 import io.eventuate.tram.messaging.common.Message;

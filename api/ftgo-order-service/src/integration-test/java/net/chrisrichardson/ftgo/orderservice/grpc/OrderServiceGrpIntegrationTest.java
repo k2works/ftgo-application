@@ -4,7 +4,7 @@ package net.chrisrichardson.ftgo.orderservice.grpc;
 import net.chrisrichardson.ftgo.orderservice.OrderDetailsMother;
 import net.chrisrichardson.ftgo.orderservice.domain.DeliveryInformation;
 import net.chrisrichardson.ftgo.orderservice.domain.Order;
-import net.chrisrichardson.ftgo.orderservice.domain.OrderService;
+import net.chrisrichardson.ftgo.orderservice.service.OrderService;
 import net.chrisrichardson.ftgo.orderservice.presentation.MenuItemIdAndQuantity;
 import org.junit.Test;
 import org.junit.runner.RunWith;

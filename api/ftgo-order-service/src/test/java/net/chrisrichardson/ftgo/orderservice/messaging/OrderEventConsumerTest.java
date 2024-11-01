@@ -2,7 +2,7 @@ package net.chrisrichardson.ftgo.orderservice.messaging;
 
 import net.chrisrichardson.ftgo.common.CommonJsonMapperInitializer;
 import net.chrisrichardson.ftgo.orderservice.RestaurantMother;
-import net.chrisrichardson.ftgo.orderservice.domain.OrderService;
+import net.chrisrichardson.ftgo.orderservice.service.OrderService;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.messaging.OrderEventConsumer;
 import org.junit.Before;
 import org.junit.Test;

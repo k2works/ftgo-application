@@ -6,7 +6,7 @@ import io.grpc.stub.StreamObserver;
 import net.chrisrichardson.ftgo.common.Address;
 import net.chrisrichardson.ftgo.orderservice.domain.DeliveryInformation;
 import net.chrisrichardson.ftgo.orderservice.domain.Order;
-import net.chrisrichardson.ftgo.orderservice.domain.OrderService;
+import net.chrisrichardson.ftgo.orderservice.service.OrderService;
 import net.chrisrichardson.ftgo.orderservice.grpc.*;
 import net.chrisrichardson.ftgo.orderservice.presentation.MenuItemIdAndQuantity;
 import org.apache.commons.lang.StringUtils;
