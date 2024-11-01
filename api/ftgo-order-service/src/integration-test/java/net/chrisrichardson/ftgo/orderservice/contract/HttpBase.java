@@ -4,7 +4,7 @@ import io.eventuate.common.json.mapper.JSonMapper;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import net.chrisrichardson.ftgo.common.CommonJsonMapperInitializer;
 import net.chrisrichardson.ftgo.orderservice.OrderDetailsMother;
-import net.chrisrichardson.ftgo.orderservice.domain.OrderRepository;
+import net.chrisrichardson.ftgo.orderservice.service.OrderRepository;
 import net.chrisrichardson.ftgo.orderservice.service.OrderService;
 import net.chrisrichardson.ftgo.orderservice.presentation.OrderController;
 import org.junit.Before;

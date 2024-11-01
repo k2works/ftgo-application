@@ -24,7 +24,7 @@ import net.chrisrichardson.ftgo.orderservice.OrderDetailsMother;
 import net.chrisrichardson.ftgo.orderservice.RestaurantMother;
 import net.chrisrichardson.ftgo.orderservice.api.web.CreateOrderRequest;
 import net.chrisrichardson.ftgo.orderservice.domain.Order;
-import net.chrisrichardson.ftgo.orderservice.domain.RestaurantRepository;
+import net.chrisrichardson.ftgo.orderservice.service.RestaurantRepository;
 import net.chrisrichardson.ftgo.testutil.FtgoTestUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

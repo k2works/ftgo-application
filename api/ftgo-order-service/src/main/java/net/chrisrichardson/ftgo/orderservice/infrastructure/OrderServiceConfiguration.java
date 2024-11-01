@@ -7,8 +7,8 @@ import io.eventuate.tram.sagas.spring.orchestration.SagaOrchestratorConfiguratio
 import io.micrometer.core.instrument.MeterRegistry;
 import net.chrisrichardson.ftgo.common.CommonConfiguration;
 import net.chrisrichardson.ftgo.orderservice.domain.OrderDomainEventPublisher;
-import net.chrisrichardson.ftgo.orderservice.domain.OrderRepository;
-import net.chrisrichardson.ftgo.orderservice.domain.RestaurantRepository;
+import net.chrisrichardson.ftgo.orderservice.service.OrderRepository;
+import net.chrisrichardson.ftgo.orderservice.service.RestaurantRepository;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.sagaparticipants.AccountingServiceProxy;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.sagaparticipants.ConsumerServiceProxy;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.sagaparticipants.KitchenServiceProxy;

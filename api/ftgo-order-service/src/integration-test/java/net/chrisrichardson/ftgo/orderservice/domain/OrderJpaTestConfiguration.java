@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
-@EnableJpaRepositories
+@EnableJpaRepositories(basePackages = "net.chrisrichardson.ftgo.orderservice.service")
 @EnableAutoConfiguration(exclude = TramConsumerJdbcAutoConfiguration.class)
 public class OrderJpaTestConfiguration {
 }

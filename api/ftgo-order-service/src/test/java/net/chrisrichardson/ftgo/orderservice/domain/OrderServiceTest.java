@@ -9,7 +9,9 @@ import net.chrisrichardson.ftgo.orderservice.sagas.cancelorder.CancelOrderSaga;
 import net.chrisrichardson.ftgo.orderservice.sagas.createorder.CreateOrderSaga;
 import net.chrisrichardson.ftgo.orderservice.sagas.createorder.CreateOrderSagaState;
 import net.chrisrichardson.ftgo.orderservice.sagas.reviseorder.ReviseOrderSaga;
+import net.chrisrichardson.ftgo.orderservice.service.OrderRepository;
 import net.chrisrichardson.ftgo.orderservice.service.OrderService;
+import net.chrisrichardson.ftgo.orderservice.service.RestaurantRepository;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -2,6 +2,7 @@ package net.chrisrichardson.ftgo.orderservice.domain;
 
 import net.chrisrichardson.ftgo.orderservice.OrderDetailsMother;
 import net.chrisrichardson.ftgo.orderservice.api.events.OrderState;
+import net.chrisrichardson.ftgo.orderservice.service.OrderRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

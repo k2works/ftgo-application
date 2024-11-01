@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
-@EnableJpaRepositories(basePackages = "net.chrisrichardson.ftgo.orderservice.domain")
+@EnableJpaRepositories(basePackages = "net.chrisrichardson.ftgo.orderservice.service")
 @EnableAutoConfiguration
 @Import({OrderServiceConfiguration.class})
 public class OrderServiceWithRepositoriesConfiguration {
