@@ -283,3 +283,14 @@ services:
       - kafka
     environment:
       KAFKA_BROKERS: kafka:29092
+
+  schemaspy-mysql:
+    build:
+      context: ops/docker
+      dockerfile: ./schemaspy/Dockerfile
+    volumes:
+      - ./ops/docker/schemaspy/output/mysql:/output
+      - ./ops/docker/schemaspy/config:/config
+    command: [ "-all", "-configFile", "/config/mysql/schemaspy.properties" ]
+    links:
+      - mysql

@@ -88,7 +88,7 @@ dockerCompose {
 
   infrastructure {
       projectName = null
-      startedServices = ["mysql", "cdc-service", "dynamodblocal-init", "kafka", "zookeeper"]
+      startedServices = ["mysql", "cdc-service", "dynamodblocal-init", "kafka", "zookeeper", "schemaspy-mysql"]
   }
 
   kafkaGui {
