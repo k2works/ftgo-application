@@ -17,6 +17,7 @@ import net.chrisrichardson.ftgo.orderservice.sagas.reviseorder.ReviseOrderSagaDa
 import net.chrisrichardson.ftgo.orderservice.presentation.MenuItemIdAndQuantity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -25,6 +26,7 @@ import java.util.function.Function;
 
 import static java.util.stream.Collectors.toList;
 
+@Service
 public class OrderService {
 
   private Logger logger = LoggerFactory.getLogger(getClass());

@@ -29,7 +29,6 @@ import java.util.Optional;
 @Import({TramEventsPublisherConfiguration.class, SagaOrchestratorConfiguration.class, CommonConfiguration.class})
 public class OrderServiceConfiguration {
 
-  @Bean
   public OrderService orderService(SagaInstanceFactory sagaInstanceFactory,
                                    RestaurantRepository restaurantRepository,
                                    OrderRepository orderRepository,
