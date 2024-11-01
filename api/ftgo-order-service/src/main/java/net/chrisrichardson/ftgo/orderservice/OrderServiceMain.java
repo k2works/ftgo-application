@@ -6,7 +6,7 @@ import io.microservices.canvas.springmvc.MicroserviceCanvasWebConfiguration;
 import net.chrisrichardson.eventstore.examples.customersandorders.commonswagger.CommonSwaggerConfiguration;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.grpc.GrpcConfiguration;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.messaging.OrderServiceMessagingConfiguration;
-import net.chrisrichardson.ftgo.orderservice.service.OrderCommandHandlersConfiguration;
+import net.chrisrichardson.ftgo.orderservice.infrastructure.OrderCommandHandlersConfiguration;
 import net.chrisrichardson.ftgo.orderservice.presentation.OrderWebConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

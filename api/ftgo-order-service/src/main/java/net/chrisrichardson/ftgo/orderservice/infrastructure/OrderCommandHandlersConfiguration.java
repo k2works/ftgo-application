@@ -1,10 +1,11 @@
-package net.chrisrichardson.ftgo.orderservice.service;
+package net.chrisrichardson.ftgo.orderservice.infrastructure;
 
 import io.eventuate.tram.spring.events.publisher.TramEventsPublisherConfiguration;
 import io.eventuate.tram.sagas.participant.SagaCommandDispatcher;
 import io.eventuate.tram.sagas.participant.SagaCommandDispatcherFactory;
 import io.eventuate.tram.sagas.spring.participant.SagaParticipantConfiguration;
 import net.chrisrichardson.ftgo.common.CommonConfiguration;
+import net.chrisrichardson.ftgo.orderservice.service.OrderCommandHandlers;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

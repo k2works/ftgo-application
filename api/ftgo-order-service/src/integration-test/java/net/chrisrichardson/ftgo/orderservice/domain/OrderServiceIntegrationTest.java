@@ -13,7 +13,7 @@ import net.chrisrichardson.ftgo.consumerservice.api.ValidateOrderByConsumer;
 import net.chrisrichardson.ftgo.orderservice.OrderDetailsMother;
 import net.chrisrichardson.ftgo.orderservice.RestaurantMother;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.messaging.OrderServiceMessagingConfiguration;
-import net.chrisrichardson.ftgo.orderservice.service.OrderCommandHandlersConfiguration;
+import net.chrisrichardson.ftgo.orderservice.infrastructure.OrderCommandHandlersConfiguration;
 import net.chrisrichardson.ftgo.orderservice.presentation.MenuItemIdAndQuantity;
 import net.chrisrichardson.ftgo.orderservice.presentation.OrderWebConfiguration;
 import net.chrisrichardson.ftgo.orderservice.service.OrderService;
