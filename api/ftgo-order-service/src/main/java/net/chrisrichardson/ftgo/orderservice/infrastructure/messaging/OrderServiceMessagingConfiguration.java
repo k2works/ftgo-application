@@ -4,7 +4,7 @@ import io.eventuate.tram.spring.events.subscriber.TramEventSubscriberConfigurati
 import io.eventuate.tram.events.subscriber.DomainEventDispatcher;
 import io.eventuate.tram.events.subscriber.DomainEventDispatcherFactory;
 import net.chrisrichardson.ftgo.orderservice.service.OrderService;
-import net.chrisrichardson.ftgo.orderservice.domain.OrderServiceWithRepositoriesConfiguration;
+import net.chrisrichardson.ftgo.orderservice.infrastructure.OrderServiceWithRepositoriesConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

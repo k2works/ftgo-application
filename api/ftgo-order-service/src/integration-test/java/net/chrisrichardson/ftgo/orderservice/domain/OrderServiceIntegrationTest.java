@@ -15,7 +15,7 @@ import net.chrisrichardson.ftgo.orderservice.RestaurantMother;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.messaging.OrderServiceMessagingConfiguration;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.OrderCommandHandlersConfiguration;
 import net.chrisrichardson.ftgo.orderservice.presentation.MenuItemIdAndQuantity;
-import net.chrisrichardson.ftgo.orderservice.presentation.OrderWebConfiguration;
+import net.chrisrichardson.ftgo.orderservice.infrastructure.OrderWebConfiguration;
 import net.chrisrichardson.ftgo.orderservice.service.OrderService;
 import net.chrisrichardson.ftgo.testutil.FtgoTestUtil;
 import org.junit.Test;

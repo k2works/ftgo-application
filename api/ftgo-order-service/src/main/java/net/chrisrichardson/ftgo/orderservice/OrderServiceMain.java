@@ -7,7 +7,7 @@ import net.chrisrichardson.eventstore.examples.customersandorders.commonswagger.
 import net.chrisrichardson.ftgo.orderservice.infrastructure.grpc.GrpcConfiguration;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.messaging.OrderServiceMessagingConfiguration;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.OrderCommandHandlersConfiguration;
-import net.chrisrichardson.ftgo.orderservice.presentation.OrderWebConfiguration;
+import net.chrisrichardson.ftgo.orderservice.infrastructure.OrderWebConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;

@@ -27,6 +27,7 @@ public class OrderServiceGrpIntegrationTest {
   @Autowired
   private OrderService orderService;
 
+  //TODO:Configureをinfrastructureに移動したらportがバッティングするようになった
   @Test
   public void shouldCreateOrder() {
 

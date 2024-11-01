@@ -1,4 +1,4 @@
-package net.chrisrichardson.ftgo.orderservice.domain;
+package net.chrisrichardson.ftgo.orderservice.infrastructure;
 
 import io.eventuate.tram.events.publisher.DomainEventPublisher;
 import io.eventuate.tram.spring.events.publisher.TramEventsPublisherConfiguration;
@@ -6,6 +6,9 @@ import io.eventuate.tram.sagas.orchestration.*;
 import io.eventuate.tram.sagas.spring.orchestration.SagaOrchestratorConfiguration;
 import io.micrometer.core.instrument.MeterRegistry;
 import net.chrisrichardson.ftgo.common.CommonConfiguration;
+import net.chrisrichardson.ftgo.orderservice.domain.OrderDomainEventPublisher;
+import net.chrisrichardson.ftgo.orderservice.domain.OrderRepository;
+import net.chrisrichardson.ftgo.orderservice.domain.RestaurantRepository;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.sagaparticipants.AccountingServiceProxy;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.sagaparticipants.ConsumerServiceProxy;
 import net.chrisrichardson.ftgo.orderservice.infrastructure.sagaparticipants.KitchenServiceProxy;
